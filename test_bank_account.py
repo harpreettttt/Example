@@ -1,7 +1,15 @@
 # test_bank_account.py
 
 import unittest
-from bank_account import BankAccount
+# from bank_account import BankAccount
+
+
+class BankAccount:
+    def __init__(self, account_number: str, account_holder: str, balance: float, account_type: str): #parameter you are just passing these so it knows what the class is made of. dont need to encapsulate here.
+        self.__account_number = account_number
+        self.__account_holder = account_holder
+        self.__balance = balance
+        self.__account_type = account_type
 
 class TestBankAccount(unittest.TestCase):
     def setUp(self):
